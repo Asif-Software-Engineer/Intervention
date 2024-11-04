@@ -43,7 +43,7 @@ navbar a:hover {
   align-items: center;
 }
 .toggler {
-  margin-left: 10px;
+  margin-left: auto;
   background: none;
   border: none;
   font-size: 24px;
@@ -90,9 +90,10 @@ navbar a:hover {
     border: none;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 426px) {
   navbar {
-    padding: 0.5rem;
+    padding: 1.5rem;
+    justify-content: space-between !important;
   }
   .nav {
     color: white;
@@ -105,9 +106,12 @@ navbar a:hover {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 0;
     z-index: 1000;
+  }
+  .call-num{
+    color: var(--bg);
   }
   nav1:hover {
     color: var(--main);
@@ -116,7 +120,7 @@ navbar a:hover {
   .toggler {
     display: block;
   }
-  .nav1.active {
+  .nav1.active, .call.active {
     display: flex;
   }
 }
@@ -297,12 +301,11 @@ header .hero-right {
     justify-content: center;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 426px) {
   header {
-    padding: 1rem;
+    padding: 1rem 1rem 3rem 1rem;
   }
   header .hero-left {
-    align-items: center;
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
@@ -315,10 +318,12 @@ header .hero-right {
   }
   .hero-right {
     max-width: 285px !important;
+    padding: 2rem;
     width: 100%;
     .input-name {
       flex-direction: column;
       width: 100%;
+      gap: 0 !important
     }
   }
 }
@@ -406,7 +411,7 @@ header .hero-right {
     }
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 426px) {
   .content h1 {
     font-size: 35px;
   }
@@ -415,11 +420,14 @@ header .hero-right {
     flex-direction: column;
     max-width: max-content;
     .card {
-      max-width: 350px !important;
+      max-width: 395px !important;
       .content-img {
         display: none;
         max-width: 330px !important;
         width: 100%;
+      }
+      h1{
+        font-size: 20px;
       }
     }
   }
@@ -558,14 +566,14 @@ header .hero-right {
     }
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 426px) {
   .carousel {
     padding: 1rem;
-    width: 97%;
+    width: 92%;
   }
   .carousel-inner {
     padding: 0 1rem !important;
-    width: 85%;
+    width: 93%;
     .carousel-item {
       display: flex;
       flex-direction: column;
@@ -577,7 +585,7 @@ header .hero-right {
         padding: 5rem 0 0 0;
         margin: -5rem 0 2rem 0;
         z-index: -1;
-        max-width: 250px;
+        max-width: 301px;
         width: 100%;
         h1 {
           margin-top: 2rem;
@@ -729,7 +737,7 @@ header .hero-right {
     font-size: 16px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 426px) {
   organize {
     padding: 1rem;
   }
@@ -924,7 +932,7 @@ header .hero-right {
     }
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 426px) {
   .testimonials {
     height: auto;
   }
@@ -933,7 +941,7 @@ header .hero-right {
     padding: 5rem 0 1rem 0 !important;
   }
   .testi-left h1 {
-    font-size: 28px !important;
+    font-size: 32px !important;
     width: 100%;
     text-align: center;
   }
@@ -1011,7 +1019,7 @@ footer {
     }
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 426px) {
   footer {
     text-align: center;
     padding: 2rem 1.5rem;
